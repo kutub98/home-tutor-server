@@ -32,7 +32,7 @@ const getAllUsers = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Users are retrieved succesfully',
+    message: 'Users are retrieved successfully',
     meta: result.meta,
     data: result.data,
   });
@@ -45,7 +45,7 @@ const updateUserById = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'User is updated succesfully',
+    message: 'User is updated successfully',
     data: result,
   });
 });
@@ -57,7 +57,7 @@ const deleteUserById = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'User is deleted succesfully',
+    message: 'User is deleted successfully',
     data: result && null,
   });
 });
